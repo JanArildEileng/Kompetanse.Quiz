@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-var tasks = Enumerable.Range(0, 5)
+var tasks = Enumerable.Range(0, 2)
     .Select( e=> Task.Run(() =>
         {
             Console.Write("*");
