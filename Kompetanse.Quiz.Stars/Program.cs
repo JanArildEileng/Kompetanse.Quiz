@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-var tasks = Enumerable.Range(0, 2)
+var tasks = Enumerable.Range(0, 5)
     .Select( e=> Task.Run(() =>
         {
             Console.Write("*");
@@ -9,5 +9,5 @@ var tasks = Enumerable.Range(0, 2)
 
 await Task.WhenAll(tasks);
 
-Console.Write(tasks.Count());
+Console.Write($"{tasks.Count()} stars");
 
